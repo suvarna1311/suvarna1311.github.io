@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SignUp page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <style>
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+	<style>
+body {font-family: Arial;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>	
+		
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Beauty Produtcs</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Makeup<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="Makeup.html">Face</a></li>
+          <li><a href="#">Eyes</a></li>
+          <li><a href="#">Lips</a></li>
+		  <li><a href="#">Nails</a></li>
+          <li><a href="#">MakeupKit</a></li>
+          <li><a href="#">Tools&Brushes</a></li>
+		  </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Skin<span class="caret"></span></a>
+	  <ul class="dropdown-menu">
+          <li><a href="#">Face</a></li>
+          <li><a href="#">Body</a></li>
+          <li><a href="#">Hands&Feet</a></li>
+		  <li><a href="#">Eye Care</a></li>
+          <li><a href="#">Lip Care</a></li>
+		  </ul></li>
+	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hairs<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Hair Care</a></li>
+          <li><a href="#">Tools&Accessories</a></li>
+          <li><a href="#">Hair Styling</a></li>
+		  </ul>
+      </li>
+	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Personal Care<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Bath&Shower</a></li>
+          <li><a href="#">Body</a></li>
+          <li><a href="#">face</a></li>
+		  <li><a href="#">Hands&Feet</a></li>
+          <li><a href="#">Feminine Hygiene</a></li>
+		  </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Wellness<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Health Supplements</a></li>
+          <li><a href="#">Weigth Management</a></li>
+          <li><a href="#">Sports Nutrition</a></li>
+		  <li><a href="#">Good For You</a></li>
+		  </ul>
+      </li>
+	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Men<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Shaving</a></li>
+          <li><a href="#">Herbal</a></li>
+          <li><a href="#">Hair</a></li>
+		  <li><a href="#">Skin Care</a></li>
+          <li><a href="#">Bath&Body</a></li>
+		  </ul>
+      </li>
+    </ul>
+	<ul class="nav navbar-nav navbar-right">
+      <li><a href="SignUp.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	  
+      <li><a href="#"  data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+    <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</nav>
+<div>
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    <label>
+      <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog">
+	
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"></button>
+				<h4 class="modal-title"><center>Sign In</center></h4>
+			</div>
+			<div class="modal-body">
+				<form>
+ 
+  <div>
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked"> Remember me
+    </label>
+  </div>
+
+  <div style="background-color:#f1f1f1">
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+			</div>
+			
+		</div>
+		
+	</div>
+</div>
+
+</body>
+</html>
